@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortex Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+            <li><a href="#team" onclick="closeMobileMenu()">Team</a></li>
+            <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+    
+    <nav id="navbar">
+        <div class="nav-container">
+            <img src="cortex.PNG" alt="Cortex Development" class="logo">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="parallax-element circle-1"></div>
+        <div class="parallax-element circle-2"></div>
+        <div class="hero-content">
+            <h1>Cortex Development</h1>
+            <p>Creating bots and tools that help out in the real world, and aviation within Infinite Flight</p>
+            <a href="#about" class="cta-button">Discover More</a>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <h2 class="section-title">About Cortex</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Our Mission</h3>
+                <p>Here at Cortex Development, we strive to improve the digital skies, one step at a time. We drive ourselves to create the best possible product, so that you, as the customer, can enjoy our services.</p>
+            </div>
+            <div class="about-card">
+                <h3>Our Vision</h3>
+                <p>To create the best digital services to enhance your flight experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Our Projects</h2>
+        <div class="products-grid">
+
+            <div class="product-card">
+                <div class="product-header">
+                    <h3>CorDesign</h3>
+                    <span class="status-badge status-active">Active</span>
+                </div>
+                <p>CorDesign is a service that helps create websites, bots, practically anything that can be made using the power of coding.</p>
+                <div class="product-info">
+                    <span><strong>Status:</strong> ACTIVE!</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <h3>Cortex</h3>
+                    <span class="status-badge status-testing">Early Testing</span>
+                </div>
+                <p>Cortex is a discord bot that manages everything you need in your discord server, from simply muting someone or clearing some messages, to getting help managing or announcing your latest news using the power of Generative AI.</p>
+                <div class="product-info">
+                    <span><strong>Status:</strong> Early Testing</span>
+                    <span><strong>Release Date:</strong> TBA</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <h3>CortexVA</h3>
+                    <span class="status-badge status-testing">In Testing</span>
+                </div>
+                <p>CortexVA is a subdivision of avCortex that helps you manage your VA, file PIREPs, and viewing the latest information about your VA.</p>
+                <div class="product-info">
+                    <span><strong>Status:</strong> In Testing</span>
+                    <span><strong>Release Date:</strong> 16 July 2025</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <h3>avCortex</h3>
+                    <span class="status-badge status-wip">WIP</span>
+                </div>
+                <p>avCortex is another variant of Cortex that does everything from tracking your current flight to finding your next flight to take.</p>
+                <div class="product-info">
+                    <span><strong>Status:</strong> Work In Progress</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-header">
+                    <h3>CorBlox</h3>
+                    <span class="status-badge status-planning">Planning</span>
+                </div>
+                <p>CorBlox is a variant of Cortex that helps link discord and Roblox seamlessly, including user information in games, current status, and much more.</p>
+                <div class="product-info">
+                    <span><strong>Status:</strong> Planning Stage</span>
+                    <span><strong>Contact:</strong> DM @AviatorChina for more info</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section">
+        <h2 class="section-title">Our Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar-aviator"></div>
+                <h3><a href="https://community.infiniteflight.com/u/aviatorchina/summary" class="team-link" data-profile="aviatorchina">AviatorChina</a></h3>
+                <p class="team-role">CEO</p>
+                <small class="team-bio">Hey there, I’m AviatorChina! (My friends call me Victor!). I'm the CEO of Cortex Development.</small>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar-pif">
+                </div>
+                <h3><a href="https://community.infiniteflight.com/u/pilot_infiniteflight/summary" class="team-link" data-profile="pilot">Pilot_InfiniteFlight</a></h3>
+                <p class="team-role">President</p>
+                <small class="team-bio">Hello! My name is Pilot_InfiniteFlight. I'm the President of Cortex Development.</small>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar-gaurav"></div>
+                <h3><a href="https://community.infiniteflight.com/u/gaur.av_iation/summary" class="team-link" data-profile="gaur-aviation">Gaur.av_iation</a></h3>
+                <p class="team-role">Head of Development</p>
+                <small class="team-bio">Hello! My name is Gaurav. I'm the Head of Development for Cortex Development.</small>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar-thebest">
+                </div>
+                <h3><a href="#" class="team-link" data-profile="free">TheBestBlaze123</a></h3>
+                <p class="team-role">Lead Developer</p>
+                <small class="team-bio">Hi! I'm TheBestBlaze123. I'm the Lead Developer of Cortex Development.</small>
+            </div>
+            <div class="team-card">
+                <div class="team-avatar-abif">
+                </div>
+                <h3><a href="#" class="team-link" data-profile="abdullah">Abif12</a></h3>
+                <p class="team-role">Director</p>
+                <small class="team-bio">Hello! My name is Abdullah. I'm the Director of Cortex Development.</small>
+                </small>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <span style="color: white;">IFC</span>
+                </div>
+                <h3>Infinite Flight Community</h3>
+                <div class="contact-info">
+                    <p style="text-align: center;"><strong>AviatorChina:</strong> <a href="https://community.infiniteflight.com/u/aviatorchina/summary" class="contact-link">@AviatorChina</a></p>
+                    <p style="text-align: center;"><strong>Pilot_Infinite Flight:</strong> <a href="https://community.infiniteflight.com/u/pilot_infiniteflight/summary" class="contact-link">@Pilot_Infinite</a></p>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <span>📧</span>
+                </div>
+                <h3>Email Support</h3>
+                <div class="contact-info">
+                    <p style="text-align: center;"><strong>General:</strong> <a href="mailto:aviatorchina55@gmail.com" class="contact-link">aviatorchina55@gmail.com</a></p>
+                    <p style="text-align: center;"><strong>Support:</strong> <a href="mailto:support@cortexdevelopment.xyz" class="contact-link">support@cortexdevelopment.xyz</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-footer">
+            <p>We're here to help! Reach out to us through any of the channels above.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cortex Development. All rights reserved.</p>
+    </footer>
+    <script>
+        // Mobile Menu Functions
+        function toggleMobileMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const mobileSidebar = document.getElementById('mobileSidebar');
+            const overlay = document.getElementById('overlay');
+            
+            hamburger.classList.toggle('active');
+            mobileSidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (mobileSidebar.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+        
+        function closeMobileMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const mobileSidebar = document.getElementById('mobileSidebar');
+            const overlay = document.getElementById('overlay');
+            
+            hamburger.classList.remove('active');
+            mobileSidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Close menu when overlay is clicked
+        document.getElementById('overlay').addEventListener('click', closeMobileMenu);
+
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollProgress = (scrollTop / scrollHeight) * 100;
+            document.getElementById('progressBar').style.width = scrollProgress + '%';
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Staggered animation for cards
+        const staggerObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 150);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.section-title, .about-card, .product-card, .team-card, .contact-card');
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Also observe product, team, and contact cards for staggered animation
+            const productCards = document.querySelectorAll('.product-card');
+            const teamCards = document.querySelectorAll('.team-card');
+            const contactCards = document.querySelectorAll('.contact-card');
+            
+            productCards.forEach(card => {
+                staggerObserver.observe(card);
+            });
+            
+            teamCards.forEach(card => {
+                staggerObserver.observe(card);
+            });
+            
+            contactCards.forEach(card => {
+                staggerObserver.observe(card);
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for hero elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax-element');
+            
+            parallaxElements.forEach((element, index) => {
+                const speed = 0.5 + (index * 0.1);
+                const yPos = -(scrolled * speed);
+                element.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+
+        const heroTitle = document.querySelector('.hero h1');
+        const originalText = heroTitle.textContent;
+        heroTitle.textContent = '';
+        
+        let i = 0;
+        const typeWriter = () => {
+            if (i < originalText.length) {
+                heroTitle.textContent += originalText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        };
+        
+        setTimeout(typeWriter, 1000);
+    </script>
+</body>
+</html>
